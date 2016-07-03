@@ -57,14 +57,6 @@ public class MyRecyclerView extends RecyclerView  {
 
 
 
-    @Override
-    public void onScrolled(int dx, int dy) {
-        View newView = getChildAt(0);
-        if(mItemScrollChangeListener!=null){
-            if(newView!=null&& newView!= mCurrentView){
-                mCurrentView = newView;
-                mItemScrollChangeListener.onChange(mCurrentView,getChildPosition(mCurrentView));
-            }
-        }
-    }
+
+
 }
